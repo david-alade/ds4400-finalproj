@@ -90,8 +90,8 @@ model = load_model('model_checkpoint.keras')
 y_pred = model.predict(X_test)
 
 # Calculate metrics
-#mse = mean_squared_error(y_test, y_pred)
-#r2 = r2_score(y_test, y_pred)
+# mse = mean_squared_error(y_test, y_pred)
+# r2 = r2_score(y_test, y_pred)
 
 #actual_y = np.array([reverse(x, mean=mean, std=std) for x in y_test])
 #predicted_y = np.array([reverse(x, mean=mean, std=std) for x in y_pred])
@@ -132,5 +132,5 @@ print("Recall: ", recall)
 print("F1: ", f1)
 print("CM: ", conf_matrix)
 
-      
-#print("Correct %: ", correct / len(y_pred))
+
+# print("Correct %: ", correct / len(y_pred))
